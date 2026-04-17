@@ -12,8 +12,8 @@ const __filename = fileURLToPath(import.meta.url);
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ['6282113821188'] // ['628','628'] 2 owner atau lebih
-global.author = 'Nazedev'
+global.owner = ['6282333222837'] // ['628','628'] 2 owner atau lebih
+global.author = 'mutsumi'
 global.botname = 'Hitori Bot'
 global.packname = 'Bot WhatsApp'
 global.timezone = 'Asia/Jakarta' // Ganti pakai command .settimezone
@@ -24,7 +24,7 @@ global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧
 global.tempatDB = 'database.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.tempatStore = 'baileys_store.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.pairing_code = true
-global.number_bot = '' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
+global.number_bot = '6285822626260' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
 
 global.fake = {
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
