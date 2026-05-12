@@ -55,7 +55,7 @@ pkg install git
 pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
-git clone https://github.com/nazedev/hitori
+git clone https://github.com/zenorth/hitori
 cd hitori
 npm install
 ```
@@ -134,7 +134,7 @@ Make sure you register and obtain a valid API key from the official website befo
 
 All main configurations are located in:
 
-📁 **[settings.js](https://github.com/nazedev/hitori/blob/master/settings.js)**
+📁 **[settings.js](https://github.com/zenorth/hitori/blob/master/settings.js)**
 
 ### Editable Settings
 
