@@ -142,9 +142,9 @@ server.listen(PORT, () => {
 });
 
 /*
-	* Create By Naze
-	* Follow https://github.com/nazedev
-	* Whatsapp : https://whatsapp.com/channel/0029VaWOkNm7DAWtkvkJBK43
+	* Create By Zenorth
+	* —
+	*
 */
 
 async function startNazeBot() {
@@ -208,7 +208,7 @@ async function startNazeBot() {
 			return msg?.message || ''
 		}
 		return {
-			conversation: 'Halo Saya Naze Bot'
+			conversation: 'Halo Saya Zenorth Bot'
 		}
 	}
 	
