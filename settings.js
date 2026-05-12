@@ -1,5 +1,8 @@
-const fs = require('fs');
-const chalk = require('chalk');
+import fs from 'fs';
+import chalk from 'chalk';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
 
 /*
 	* Create By Naze
@@ -9,10 +12,10 @@ const chalk = require('chalk');
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ["6282113821188"] // ['628','628'] 2 owner atau lebih
-global.author = 'Nazedev'
-global.botname = 'Hitori Bot'
-global.packname = 'Bot WhatsApp'
+global.owner = ["62882001427630","27619847334","27842184472"] // ['628','628'] 2 owner atau lebih
+global.author = 'Zenorth'
+global.botname = 'zenorth'
+global.packname = 'Zenorth+'
 global.timezone = 'Asia/Jakarta' // Ganti pakai command .settimezone
 global.locale = 'en' // Ganti pakai command .setlocale
 global.listprefix = ['+','!','.']
@@ -32,10 +35,10 @@ global.fake = {
 }
 
 global.my = {
-	yt: 'https://youtube.com/c/Nazedev',
-	gh: 'https://github.com/nazedev',
-	gc: 'https://chat.whatsapp.com/DPUC3uuqYZI9FNLdgtMp4n?mode=gi_t',
-	ch: '120363250409960161@newsletter',
+	yt: '—',
+	gh: '—',
+	gc: '—',
+	ch: '—',
 }
 
 global.limit = {
@@ -46,27 +49,27 @@ global.limit = {
 
 global.money = {
 	free: 10000,
-	premium: 1000000,
-	vip: 10000000
+	premium: 9999999,
+	vip: 1e+25
 }
 
 global.mess = {
-	key: "Apikey limit! Silahkan Upgrade: https://naze.biz.id",
-	owner: "Khusus Owner!",
-	admin: "Khusus Admin!",
-	botAdmin: "Bot harus Admin!",
-	onWa: "Nomor tersebut tidak terdaftar di WhatsApp!",
-	group: "Khusus Grup!",
-	private: "Khusus Private Chat!",
-	quoted: "Reply pesannya!",
-	limit: "Limit habis!",
-	prem: "Khusus Premium!",
-	text: "Masukkan teksnya!",
-	media: "Kirim medianya!",
-	wait: "Proses...",
-	fail: "Gagal!",
+	key: "API key limit reached! Please upgrade: https://naze.biz.id",
+	owner: "Owner only!",
+	admin: "Admin only!",
+	botAdmin: "Bot must be an admin!",
+	onWa: "Number is not registered on WhatsApp!",
+	group: "Group chat only!",
+	private: "Private chat only!",
+	quoted: "Please reply to a message!",
+	limit: "Limit exhausted!",
+	prem: "Premium only!",
+	text: "Please enter the text!",
+	media: "Please send the media!",
+	wait: "Processing...",
+	fail: "Failed!",
 	error: "Error!",
-	done: "Selesai!"
+	done: "Done!"
 }
 
 global.APIs = {
@@ -74,8 +77,8 @@ global.APIs = {
 	neosantara: 'https://api.neosantara.xyz/v1',
 }
 global.APIKeys = {
-	'https://api.naze.biz.id': 'YOUR_API_KEY',
-	'https://api.neosantara.xyz/v1': 'API_KEY_NEOSANTARA_AI',
+	'https://api.naze.biz.id': 'nz-0c5e90bd34',
+	'https://api.neosantara.xyz/v1': 'nsk_c709c0b8b5044fa8a6270c0c6bce1824',
 }
 
 // Lainnya
@@ -90,10 +93,6 @@ global.jadwalSholat = {
 global.badWords = ['dongo', 'konsol'] // input kata-kata toxic yg lain. ex: ['dongo','dongonya']
 global.chatLength = 1000
 
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-	fs.unwatchFile(file)
+fs.watchFile(__filename, async () => {
 	console.log(chalk.yellowBright(`[UPDATE] ${__filename}`))
-	delete require.cache[file]
-	require(file)
 });
